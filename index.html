@@ -5,23 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+      /* Set hero section to 1/5 of the page */
+      .hero {
+        height: 20vh;
+      }
+      /* Set main section to 1/2 of the page */
+      main {
+        min-height: 40vh;
+      }
+  </style>
   <title>Example Tailwind CSS Page</title>
 </head>
 
-<body class="bg-gray-100">
-  <header class="bg-white p-4 shadow-md">
+<body class="bg-gray-800 text-white">
+  <header class="bg-gray-900 p-4 shadow-md">
     <nav class="flex items-center justify-between">
-      <a href="#" class="text-lg font-medium text-gray-800">Example Site</a>
+      <a href="#" class="text-lg font-medium">Example Site</a>
       <div class="flex">
-        <a href="#" class="px-4 py-2 text-gray-600 hover:text-gray-800">Home</a>
-        <a href="#" class="px-4 py-2 text-gray-600 hover:text-gray-800">About</a>
-        <a href="#" class="px-4 py-2 text-gray-600 hover:text-gray-800">Contact</a>
+        <a href="#" class="px-4 py-2 hover:text-gray-400">Home</a>
+        <a href="#" class="px-4 py-2 hover:text-gray-400">About</a>
+        <a href="#" class="px-4 py-2 hover:text-gray-400">Contact</a>
       </div>
     </nav>
   </header>
 
   <section class="hero bg-cover bg-center" style="background-image: url('https://via.placeholder.com/2000x800')">
-    <div class="p-4 text-center text-white">
+    <div class="p-4 text-center">
       <h1 class="text-4xl font-medium">Welcome to Example Site</h1>
       <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, magna sit amet sollicitudin feugiat, magna.</p>
     </div>
@@ -33,9 +43,9 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, magna sit amet sollicitudin feugiat, magna.</p>
   </main>
 
-  <footer class="bg-white p-4">
+  <footer class="bg-gray-900 p-4">
     <div class="text-center">
-      <p class="text-gray-600">Copyright © 2021 Example Site</p>
+      <p class="text-gray-400">Copyright © 2021 Example Site</p>
     </div>
   </footer>
 </body>
